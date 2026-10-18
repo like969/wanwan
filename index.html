@@ -2,9 +2,10 @@
 <html lang="zh-CN">
 <head>
 <style>
-  iframe[title="Netlify"] { display: none !important; }
-  div[style*="netlify"] { display: none !important; }
-  #netlify-badge { display: none !important; }
+  /* 强行给整个页面底部留出空间，把按钮顶上来 */
+  body { padding-bottom: 70px !important; }
+  /* 再试一次隐藏它 */
+  iframe, [id*="netlify"], [class*="netlify"] { display: none !important; }
 </style>  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
   <meta name="apple-mobile-web-app-capable" content="yes">
